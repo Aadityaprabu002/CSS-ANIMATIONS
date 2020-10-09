@@ -1,0 +1,164 @@
+body{
+             background-color:rgb(93, 188, 210);
+}
+.container{
+     
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    
+}
+
+.legs{
+       height:100px;
+       width:100px;
+       display: flex;
+       align-items: center;
+       justify-content: space-evenly;
+      
+}
+
+.leg1,.leg2,.leg3,.leg4{
+
+     height:40px;
+     width:10px;
+     background-color: black;
+}
+.sheepbody{
+
+     height:150px;
+     width:150px;
+     border-radius:100%;
+     left:-15px;
+     bottom:50%;
+     position: absolute;
+     background-color: antiquewhite;
+}
+
+
+.ear1,.ear2{
+
+    height:40px;
+    position: absolute;
+    width:50px;
+    bottom:110%;
+    border-radius:100%;
+    background-color:grey;
+}
+.ear1{
+
+     left:105px;
+    
+}
+.ear2{
+
+    left:45px;
+   
+}
+.sheepface{
+
+    height:100px;
+    width:100px;
+    border-radius:100%;
+    left:50px;
+    bottom:50%;
+    position: absolute;
+    background-color: rgb(32, 30, 33);
+}
+.blackball1,.blackball2{
+    height:10px;
+    width:10px;
+    border-radius:100%;
+    background-color:black;
+    position: absolute;
+}
+.blackball1{
+     left:87px;
+     bottom:101%;
+}
+.blackball2{
+    left:123px;
+    bottom:101%;
+}
+.eye1,.eye2{
+
+    height:30px;
+    width:30px;
+    bottom:90px;
+    border-radius:100%;
+    background-color: white;
+    position:absolute;
+}
+.eye1{
+     left:120px;
+}
+.eye2{
+    left:80px;
+}
+
+.tail{
+
+    height:40px;
+    position: absolute;
+    width:50px;
+    left:-30%;
+    bottom:90%;
+    border-radius:100%;
+    background-color:grey;)
+
+}
+.mouth{
+
+    height:50px;
+    width:80px;
+    border-radius:100%;
+
+    left:75px;
+    bottom:50px;
+    position: absolute;
+    background-color:rgb(32, 30, 33);
+}
+
+.shadow{
+
+    bottom:23%;
+    height:20px;
+    width:200px;
+    position: absolute;;
+    border-radius:100%;
+    background-color:black;
+    opacity:0.4;
+    left:-65%;
+}
+#text{
+      font-family: Arial, Helvetica, sans-serif;
+      color: seashell;
+      margin-top:130px;
+      font-size: 40px;
+      text-align: center;
+}
+
+ 
+.container:hover .eye1,.container:hover .eye2{
+ 
+    animation-name:rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+    animation-timing-function:linear ;
+} 
+
+ 
+
+@keyframes rotate{
+
+
+     100%
+     {
+           /* transform:rotate(360deg);*/
+           
+             width:31px;
+             height:25px;
+             background-color:red;
+     }
+}

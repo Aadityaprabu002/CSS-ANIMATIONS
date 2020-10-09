@@ -1,0 +1,370 @@
+body{
+
+     background-color:rgb(198, 249, 240) ;
+}
+.container{
+
+    margin:0;
+    padding:0;
+    top: 20%;
+    left: 45%;
+    position: absolute;
+}
+.topbody{
+
+      height:200px;
+      width:240px;
+      border-radius: 45%;
+      background-color: black;
+      position: absolute;
+      top:-10px;
+      left:-3px;
+     
+}
+.bottombody{
+
+    height:260px;
+    width:270px;
+    border-radius: 45%;
+    background-color: black;
+    position:absolute;
+    left:-19px;
+    top:90px;
+    
+}
+
+.whitebody{
+
+      
+      height:220px;
+      width:220px;
+      border-radius: 40%;  
+      background-color:white;   
+      position: relative;
+      left:6px;
+      top:120px;
+      
+}
+.face{
+      position:relative;
+      bottom:200px;
+      left:25px;
+}
+
+.rightface{
+     
+    height:150px;
+    width:130px;
+    border-radius: 100%;
+    background-color:white;
+    position:absolute;
+
+}
+.leftface{
+
+  
+    height:150px;
+    width:130px;
+    border-radius: 100%;
+    background-color:white;
+    left:50px;
+    position: absolute;
+
+}
+.lefthand,.righthand{
+      top:130px;
+}
+
+.lefthand{
+
+        height:100px;
+        width:50px;
+        border-radius:100%;
+        transform: rotate(40deg);
+        background-color:black;
+        left:-36px;
+        position:absolute;
+}
+.righthand{
+
+    height:100px;
+    width:50px;
+    border-radius:100%;
+    transform: rotate(-40deg);
+    background-color:black;
+    left:216px;
+    position:absolute;
+}
+.leftleg,.rightleg{
+      position:absolute;
+      top:290px;
+      height:100px;
+      width:50px;
+      border-radius:100%; 
+      background-color:rgb(255, 164, 0);
+     
+}
+.leftleg{
+
+    transform: rotate(80deg);
+    left:0px;
+}
+.rightleg{
+
+    transform: rotate(-80deg);
+    left:190px;
+   
+}
+
+.eye1,.eye2{
+      position: absolute;
+     
+      top:65px;
+      height:45px;
+      width:45px;
+      border-radius:100%; 
+      background-color:black; 
+}
+.eye1{
+      left:140px;
+}
+.eye2{
+      left:46px;
+}
+
+.eye1ball,.eye2ball{
+
+    position: absolute; 
+    top:75px;
+    height:15px;
+    width:15px;
+    border-radius:100%; 
+    background-color:white; 
+}
+.eye1ball{
+
+    left:145px;  
+}
+.eye2ball{
+    left:51px;
+}
+.mouth{
+
+    
+     position: absolute;
+     left:80px;
+     bottom:90px;
+}
+.uppermouth{
+  
+    height:30px;
+    width:70px;
+    border-radius:100%; 
+    top:-15px;
+    background-color:rgb(255, 164, 0);
+    position:inherit;
+}
+.lowermouth{
+
+    position:inherit;
+    height:20px;
+    width:40px;
+    top:4px;
+    left:16px;
+    border-radius:100%; 
+    background-color:rgb(255, 164, 0);
+}
+
+.rightcheek,.leftcheek{
+
+    top:120px;
+    position: absolute;;
+    height:20px;
+    width:30px;
+    border-radius:100%; 
+    background-color:white;
+}
+.rightcheek{
+     left:160px;
+     transform:rotate(-20deg);
+}
+.leftcheek{
+     left:40px;
+     transform:rotate(20deg);
+}
+.leftbow,.rightbow{
+      bottom:10px;
+      left:90px;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-radius: 30%;
+      border-top: 25px solid transparent;
+      border-bottom: 25px solid transparent;
+}
+.leftbow{
+
+   
+	
+	border-right: 60px solid black
+	
+}
+.rightbow{
+  
+
+	border-left: 60px solid black;
+	
+}
+
+.container:hover
+{
+       animation-name:JUMP;
+       animation-duration: 0.4s;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+       animation-timing-function: linear;
+}
+
+@keyframes JUMP
+{
+    100%{
+          transform: translateY(-40px);
+    }
+}
+
+.container:hover .rightcheek , .container:hover .leftcheek
+{
+       animation-name:CHEEKS;
+       animation-duration: 2s;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+       animation-timing-function: linear;
+}
+@keyframes CHEEKS
+{
+    100%{
+         background-color: lightcoral;
+         
+    } 
+}
+.container:hover .righthand 
+{
+       animation-name:RIGHTHANDSHAKE;
+       animation-duration: 0.5s;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+       animation-timing-function: linear;
+}
+.container:hover .lefthand 
+{
+       animation-name:LEFTHANDSHAKE;
+       animation-duration: 0.5s;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+       animation-timing-function: linear;
+}
+
+.container:hover .leftleg
+{
+       animation-name:leftleg;
+       animation-duration: 0.5s;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+       animation-timing-function: linear;
+}
+.container:hover .rightleg
+{
+       animation-name:rightleg;
+       animation-duration: 0.5s;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+       animation-timing-function: linear;
+}
+@keyframes leftleg{
+    100%{
+           transform:rotate(60deg);
+    }
+}
+@keyframes rightleg{
+
+     100%{
+            transform:rotate(-60deg);
+     }
+}
+@keyframes RIGHTHANDSHAKE
+{
+     100%{
+           transform:rotate(-100deg);
+     }
+
+}
+@keyframes LEFTHANDSHAKE
+{
+
+    100%{
+         transform:rotate(100deg);
+  }
+
+}
+.container:hover .lowermouth
+{
+       animation-name:mouthdown;
+       animation-duration: 0.5s;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+       animation-timing-function: linear;
+}
+@keyframes mouthdown{
+
+    100%{
+         transform:translateY(15px);
+        }
+}
+.tongue{
+
+      height:20px;
+      width:40px;
+      border-radius:100%;
+      left:15px;
+      top:5px;
+      position: absolute;
+      background-color: coral;
+
+}
+.shadow{
+
+      height:30px;
+      width:400px;
+      left:555px;
+      border-radius: 100%;
+      background-color: darkslategrey;
+      position: absolute;
+      top:485px;
+      
+}
+.container:hover .eye1,.container:hover .eye2
+{
+       animation-name:EYE;
+       animation-duration:2s;
+       animation-iteration-count:infinite;
+       animation-direction: alternate;
+       animation-timing-function: linear;
+}
+@keyframes EYE{
+      0%{
+            height:5px;
+      }
+      100%{
+            height:8px;
+            
+      }
+}
+.text{
+
+      position: absolute;
+      left:42%;
+      top:5%;
+      font-family: Arial, Helvetica, sans-serif;
+      color:black;
+      font-size: 60px;;
+}

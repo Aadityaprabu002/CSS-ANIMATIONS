@@ -1,0 +1,91 @@
+body{
+    background-color: rgb(0, 0, 0);
+
+}
+.container{
+
+     margin:200px;
+     display: flex;
+     flex-direction:row;
+     justify-content: space-evenly;
+    
+    
+}
+.left-shut,.right-shut{
+
+    height:100px;
+    width: 300px;
+    background-color :rgb(238, 105, 64);
+    z-index:999;
+    left:-99px;
+    top:-40px;
+    position: relative;
+    transform: rotate(-45deg);
+    
+ 
+}
+
+.left-eye,.right-eye{
+
+      height:200px;
+      width: 200px;
+      background-color:white;
+      border-radius: 75% 0;
+      transform:rotate(45deg);
+      overflow: hidden;
+      
+     
+     
+     
+}
+.left-eyeball,.right-eyeball{
+
+    height:100px;
+    width: 100px;
+    background-color:rgb(88, 101, 117);
+    border-radius: 100% ;
+    position: absolute;
+    left:50px;
+    top:50px; 
+   
+    
+}
+
+div.iris{
+
+     height : 35px;
+     width:35px;
+     position: absolute;
+     border-radius: 100%;
+     top:32%;
+     left:32%;
+
+     background-color: rgb(34, 47, 63);
+}
+
+.close:hover .left-shut,.close:hover .right-shut
+{
+    
+     animation-duration: 1s;
+     animation-name:shut;
+     animation-iteration-count: 1;
+     animation-direction: alternate;
+     cursor: pointer;
+     
+    
+}
+
+@keyframes shut{
+
+  
+    50%{
+
+        height:250px;
+        width:450px;
+    }
+    100%{
+         
+        height:100px;
+        width:300px;
+    }
+}
